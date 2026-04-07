@@ -57,7 +57,7 @@ openclaw onboard --non-interactive \
 2. Pull a local model if you want local inference:
 
 ```bash
-ollama pull glm-4.7-flash
+ollama pull gemma4
 # or
 ollama pull gpt-oss:20b
 # or
@@ -82,7 +82,7 @@ openclaw onboard
 
 OpenClaw currently suggests:
 
-- local default: `glm-4.7-flash`
+- local default: `gemma4`
 - cloud defaults: `kimi-k2.5:cloud`, `minimax-m2.5:cloud`, `glm-5:cloud`
 
 5. If you prefer manual setup, enable Ollama for OpenClaw directly (any value works; Ollama doesn't require a real key):
@@ -99,7 +99,7 @@ openclaw config set models.providers.ollama.apiKey "ollama-local"
 
 ```bash
 openclaw models list
-openclaw models set ollama/glm-4.7-flash
+openclaw models set ollama/gemma4
 ```
 
 7. Or set the default in config:
@@ -108,7 +108,7 @@ openclaw models set ollama/glm-4.7-flash
 {
   agents: {
     defaults: {
-      model: { primary: "ollama/glm-4.7-flash" },
+      model: { primary: "ollama/gemma4" },
     },
   },
 }
@@ -355,7 +355,7 @@ To add models:
 
 ```bash
 ollama list  # See what's installed
-ollama pull glm-4.7-flash
+ollama pull gemma4
 ollama pull gpt-oss:20b
 ollama pull llama3.3     # Or another model
 ```
