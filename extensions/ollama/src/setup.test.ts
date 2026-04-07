@@ -209,8 +209,8 @@ describe("ollama setup", () => {
 
     expect(modelIds).toEqual([
       "kimi-k2.5:cloud",
-      "minimax-m2.5:cloud",
-      "glm-5:cloud",
+      "minimax-m2.7:cloud",
+      "glm-5.1:cloud",
       "llama3:8b",
       "gemma4",
       "deepseek-r1:14b",
